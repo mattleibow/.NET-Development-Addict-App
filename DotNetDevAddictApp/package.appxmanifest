@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="51681.NETDevelopmentAddic..NETDevelopmentAddict" Version="1.0.0.0" Publisher="CN=B0BB84CF-0033-49C8-BB54-7D95062245A2" />
+  <mp:PhoneIdentity PhoneProductId="19e67606-bef1-47eb-9389-350963b3768e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>.NET Development Addict</DisplayName>
+    <PublisherDisplayName>.NET Development Addict</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="https://dotnetdevaddict.co.za/">
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="https://dotnetdevaddict.co.za/" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="https://www.dotnetdevaddict.co.za/" Type="include" WindowsRuntimeAccess="all" />
+      </uap:ApplicationContentUriRules>
+      <uap:VisualElements DisplayName=".NET Development Addict" Description="Home is where the [.net] compiler is." BackgroundColor="transparent" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" ShortName=".Net Dev Addict">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="images\splashscreen.png" BackgroundColor="#5e5e5e" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
